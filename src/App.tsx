@@ -12,7 +12,7 @@ function App() {
 
           <img
               className="photo"
-              src="/photo.jpg"
+              src="/resume-page/photo.jpg"
               alt="photo"
           />
 
