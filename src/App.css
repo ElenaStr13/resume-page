@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f4f4f4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.resume{
+  width:1000px;
+  margin:40px auto;
+  background:white;
+  display:flex;
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left{
+  width:35%;
+  background:#ececec;
+  padding:30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.right{
+  width:65%;
+  padding:40px;
 }
 
-.App-link {
-  color: #61dafb;
+.photo{
+  width:180px;
+  border-radius:10px;
+  margin-bottom:30px;
 }
 
-@keyframes App-logo-spin {
+h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+h2{
+  margin-top:30px;
+  color:#5c5c5c;
+}
+
+h3{
+  color:#777;
+  margin-bottom:40px;
+}
+
+ul{
+  padding-left:20px;
+}
+
+.project{
+  margin-bottom:20px;
+}
+.project li{
+  margin-bottom:8px;
+}
+.project a{
+  text-decoration:none;
+  color:black;
+}
+
+.education-item{
+  margin-bottom:25px;
+}
+
+.education-item h4{
+  margin-bottom:5px;
+}
+
+.education-item p{
+  color:#777;
+  margin:5px 0;
+}
+
+.education-item span{
+  font-size:15px;
+}
+
+.project a:hover{
+  color:#666;
+}
+
+.project p{
+  color:#777;
+  margin-bottom:10px;
+}
+
+.soft-skills-list{
+  padding-left:20px;
+}
+
+.soft-skills-list li{
+  margin-bottom:8px;
+}
+
+.contact-item a {
+  color: #4f4f4f;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-item a:hover {
+  color: #7a6d63;
+}
+
+.contact-item a:active {
+  color: #b0b0b0;
+}
+.contact-item span {
+  color: #5a5a5a;
+}
+.project a{
+  color:#2d2d2d;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.project a:hover{
+  color:#7a6d63;
+}
+
+/*nimation*/
+.resume {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.right h1 {
+  animation: slideDown 0.8s ease-in-out;
+}
+
+section {
+  animation: slideUp 0.8s ease-in-out;
+}
+
+.project,
+.education-item {
+  animation: slideUp 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.photo {
+  transition: transform 0.3s ease;
+}
+
+.photo:hover {
+  transform: scale(1.03);
 }
