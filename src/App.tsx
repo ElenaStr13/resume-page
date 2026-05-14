@@ -12,7 +12,7 @@ function App() {
 
           <img
               className="photo"
-              src="/resume-page/photo.jpg"
+              src={process.env.PUBLIC_URL + "/photo.jpg"}
               alt="photo"
           />
 
